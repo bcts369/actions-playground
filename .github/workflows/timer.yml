@@ -1,0 +1,14 @@
+
+name: Timer per one hour 
+on:
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  build:
+    name: Timer
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo $(date) 
+
+
