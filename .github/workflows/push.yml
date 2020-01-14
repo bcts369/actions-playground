@@ -1,0 +1,12 @@
+
+name: Push something
+on: push
+
+jobs:
+  build:
+    name: Greeting
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "プッシュされました。"
+
+
